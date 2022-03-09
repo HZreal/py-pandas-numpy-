@@ -24,9 +24,9 @@ import pandas
 
 
 data4 = {
-  "calories": [420, 380, 390],
-  "duration": [50, 40, 45],
-  "fashion": [30, 90, 60]
+    "calories": [420, 380, 390],
+    "duration": [50, 40, 45],
+    "fashion": [30, 90, 60]
 }
 # dataFrame4 = pandas.DataFrame(data=data4)
 # print(dataFrame4)
@@ -36,40 +36,11 @@ data4 = {
 # print(dataFrame4.loc[[0, 1]])     # 返回结果其实就是一个 Pandas DataFrame 数据。
 
 dataFrame5 = pandas.DataFrame(data=data4, index=["day1", "day2", "day3"])
-print(dataFrame5.loc['day1'])
-print(dataFrame5.loc[['day1', 'day3']])       # 取某两行
-print(dataFrame5[['calories', 'fashion']])    # 取某两列
+# print(dataFrame5.loc['day1'])
+# print(dataFrame5.loc[['day1', 'day3']])       # 取某两行
+# print(dataFrame5[['calories', 'fashion']])    # 取某两列
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print(dataFrame5.index)  # 返回索引的迭代器
+for index in dataFrame5.index:
+    print(index)
 
