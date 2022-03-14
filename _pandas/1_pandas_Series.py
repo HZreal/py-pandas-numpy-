@@ -21,7 +21,8 @@ print(mySeries4)
 print(mySeries5)
 
 
-
+# date_range生成日期的时间序列，periods：时间天使，freq：递进单位，默认一天，'B'表示略过周末
+datetime_index = pd.date_range(start='2021-9-1', periods=5, freq='B')
 
 
 
