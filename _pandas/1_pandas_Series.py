@@ -1,6 +1,6 @@
 
-
-import pandas
+import numpy as np
+import pandas as pd
 
 # data = ['huang', 'zhen', '1', '2']
 # mySeries1 = pandas.Series(data=data)
@@ -13,9 +13,9 @@ import pandas
 # print(mySeries2['y'])
 
 sites = {1: "Google", 2: "Runoob", 3: "Wiki"}
-mySeries3 = pandas.Series(sites)
-mySeries4 = pandas.Series(sites, index = [1, 2])
-mySeries5 = pandas.Series(sites, index = [1, 2], name="RUNOOB-Series-TEST" )
+mySeries3 = pd.Series(sites)
+mySeries4 = pd.Series(sites, index = [1, 2])
+mySeries5 = pd.Series(sites, index = [1, 2], name="RUNOOB-Series-TEST" )
 print(mySeries3)
 print(mySeries4)
 print(mySeries5)
