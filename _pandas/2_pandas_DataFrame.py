@@ -22,11 +22,11 @@ import numpy as np
 # print(df3)   # 没有对应的部分数据为 NaN。
 
 
-# data4 = {
-#     "calories": [420, 380, 390],
-#     "duration": [50, 40, 45],
-#     "fashion": [30, 90, 60]
-# }
+data4 = {
+    "calories": [420, 380, 390],
+    "duration": [50, 40, 45],
+    "fashion": [30, 90, 60]
+}
 # df4 = pd.DataFrame(data=data4)
 # print(df4)
 # # 使用 loc 属性返回指定行的数据，如果没有设置索引，第一行索引为 0，第二行索引为 1，以此类推
@@ -34,14 +34,16 @@ import numpy as np
 # # 返回多行数据，使用 [[ ... ]] 格式，... 为各行的索引，以逗号隔开
 # print(df4.loc[[0, 1]])     # 返回结果其实就是一个 pd DataFrame 数据。
 
-# df5 = pd.DataFrame(data=data4, index=["day1", "day2", "day3"])
-# print(df5.loc['day1'])
-# print(df5.loc[['day1', 'day3']])       # 取某两行
-# print(df5[['calories', 'fashion']])    # 取某两列
+df5 = pd.DataFrame(data=data4, index=["day1", "day2", "day3"])
+print(df5.loc['day1'])
+print(df5.loc[['day1', 'day3']])       # 取某两行
+print(df5[['calories', 'fashion']])    # 取某两列
 
 # print(df5.index)  # 返回索引的迭代器
 # for index in df5.index:
 #     print(index)
+
+
 
 
 
